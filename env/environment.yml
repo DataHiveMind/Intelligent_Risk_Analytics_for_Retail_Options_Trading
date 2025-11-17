@@ -1,0 +1,29 @@
+name: retail-options-risk-analytics
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+  - tensorflow
+  - keras
+  - pip
+  - pip:
+      - arcticdb        # time-series database for storing options chains
+      - mlflow          # experiment tracking
+      - yfinance        # options chain data ingestion
+      - quantlib-python # financial modeling library
+      - plotly          # interactive dashboards
+      - tf-quant-finance # quantum finance models
+      - ta                # technical analysis library
+      - arch             # econometric modeling
+      - statsmodels      # statistical modeling
+      - hmmlearn         # hidden markov models

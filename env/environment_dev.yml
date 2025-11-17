@@ -1,0 +1,29 @@
+name: retail-options-risk-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytest            # unit testing
+  - black             # code formatting
+  - flake8            # linting
+  - pre-commit        # enforce style checks
+  - mypy              # static type checking
+  - sphinx            # documentation generation
+  - pip
+  - pip:
+      - coverage       # test coverage reports
+      - nbqa           # lint/format Jupyter notebooks
+      - tox            # automation testing
+      - arcticdb        # time-series database for storing options chains
+      - yfinance       # Yahoo Finance API for market data
+      - pandas         # data manipulation and analysis
+      - numpy          # numerical computing
+      - scikit-learn   # machine learning
+      - matplotlib     # plotting and visualization
+      - seaborn        # statistical data visualization
+      - jupyterlab     # interactive notebooks
+      - plotly         # interactive plotting
+      - arch          # econometric modeling
+      - statsmodels    # statistical modeling
+      - ta             # technical analysis indicators
